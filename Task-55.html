@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-55</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 45vh ;
+            width: 22vw;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #b39ddb;
+        }
+
+        input {
+            width: 13vw;
+            height: 25px;
+            padding:0 10px;
+            margin: 13px 0;
+            border-radius: 5px;
+            font-size: 15px ;
+        }
+
+        input[type=submit] {
+
+            width: 100px;
+            height: 30px ;
+            
+            font-size: 17px;
+
+        }
+
+         
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <label for="name"> Username : </label>
+            <input type="name" id="name" placeholder="Enter your Username" required>
+            <label for="password"> Password : </label>
+            <input type="password" id="Password" placeholder="Enter your Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

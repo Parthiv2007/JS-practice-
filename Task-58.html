@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-58</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:#fff;
+           
+        }
+       
+
+        .Toggle {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            background-color:  #000000;
+            border-radius: 20px ;
+             
+        }
+
+        .Toggle::after {
+            content: '';
+            position: absolute;
+            top:1px;
+            left: 1px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            transition: all 0.3s linear ;
+        }
+
+#check {
+    display: none;
+}
+
+
+
+input[type=checkbox]:checked ~  .Toggle::after{
+
+ translate: 20px 0;
+}
+
+input[type=checkbox]:checked ~  .Toggle{
+    background-color: #ccc;
+}
+ input[type=checkbox]:checked ~ body {
+    background-color: rgb(15, 15, 56);
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+
+    <input type="checkbox" id="check">
+    <label for="check" class="Toggle"></label>
+</div>
+</body>
+
+</html>

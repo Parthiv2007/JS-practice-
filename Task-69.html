@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-69</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #151515;
+        }
+
+        .skills h2 {
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .progress-bar {
+
+            width: 600px;
+            height: 10px;
+            background-color: #959595;
+            border-radius: 5px;
+        }
+
+
+        .progress-bar .html,
+        .css,
+        .javascript {
+            height: 10px;
+          
+            border-radius: 5px;
+            /* background-color: green; */
+
+        }
+
+        .progress-bar div span {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color:#151515;
+            color: #fff;
+            text-align: center;
+           float: right;
+            display: block;
+            margin-top: -15px;
+            margin-right: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.html {
+    background-color: red;
+    animation: html 1s linear forwards;
+}
+.css {
+    background-color:blue;
+     animation: css 1s linear forwards;
+}
+.javascript {
+    background-color :blueviolet;
+     animation: javascript 1s linear forwards;
+}
+
+.html span {
+    border: 2px solid red;
+      
+}
+
+.css span {
+    border: 2px solid blue;
+    
+}
+.javascript span {
+    border: 2px solid blueviolet;
+
+}
+
+@keyframes html {
+    100% {
+        width: 86%;
+    }
+}
+@keyframes css {
+    100% {
+        width: 65%;
+    }
+}
+@keyframes javascript {
+    100% {
+        width: 5%;
+    }
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="detail">
+            <div class="skills">
+                <h2>HTML</h2>
+                <div class="progress-bar">
+                    <div class="html"><span>86%</span>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"><span>65%</span>
+                        </div>
+                        <h2>JavaScript</h2>
+                        <div class="progress-bar">
+                            <div class="javascript"><span>5%</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

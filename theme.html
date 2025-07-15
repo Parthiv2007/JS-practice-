@@ -21,41 +21,43 @@
 
         button {
             cursor: pointer;
-            height: 100px ;
+            height: 100px;
             width: 100px;
             border-radius: 50%;
-
-        }
-        .bx {
             font-size: 50px;
+           background-color: rgb(26,36,61);
+           transition: 1s;
         }
 
+         
 
-/* Page Elements */
 
+        /* Page Elements */
     </style>
 </head>
 
 <body>
     <button class="button">
-       <i class='bx bxs-moon' ></i>
+        🌙
     </button>
 
 
-<!-- Page script -->
+    <!-- Page script -->
 
-   <script>
+    <script>
         const btn = document.querySelector('.button');
 
         const body = document.querySelector('body');
 
         btn.addEventListener('click', () => {
             body.style.backgroundColor = `rgb(26, 36, 61)`
-            btn.innerHTML = " <i class='bx bx-sun'></i>"
+            btn.innerHTML = "☀️"
+            btn.style.backgroundColor = `rgb(255,255,255)`
         })
         btn.addEventListener('dblclick', () => {
             body.style.backgroundColor = `rgb( 255,255,255)`
-            btn.innerHTML = " <i class='bx bxs-moon' ></i>"
+            btn.innerHTML = "🌙"
+            btn.style.backgroundColor = `rgb(26,36,61)`
         })
 
     </script>

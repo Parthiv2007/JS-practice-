@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task-39-40-41-42-43</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0 20px;
+        }
+
+        nav ul li {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #bx {
+            font-size: 55px;
+            color: white;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+
+            #bx {
+                display: block;
+                margin-left: 20px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            #check:checked~nav ul {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                position: absolute;
+                top: 84px;
+                right: 0;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+            }
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 50%;
+            grid-auto-rows: 130px;
+            border: 2px solid #ccc;
+        }
+
+        .box1 {
+            position: relative;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            background-position: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        .text {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+
+
+        .row2 {
+            grid-row: span 2;
+        }
+
+        .col2 {
+            grid-column: span 2;
+        }
+
+        .row3 {
+            grid-row: span 3;
+        }
+
+        footer {
+            height: 60px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #facebook {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #facebook:hover {
+            color: yellow;
+        }
+        #youtube {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #youtube:hover {
+            color: yellow;
+        }
+        #google {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #google:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="bx bx-menu " id="bx"></i>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="text">
+            <h2>Grid Gallery</h2>
+            <p>Click on the images to view them in full size.</p>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="box1 col2"
+                style="background-image: url(https://plus.unsplash.com/premium_photo-1749826522486-c14ca7c7a741);background-size: cover;">
+                <a href="https://plus.unsplash.com/premium_photo-1749826522486-c14ca7c7a741">Mountain</a>
+            </div>
+            <div class="box1"
+                style="background-image: url(https://images.unsplash.com/photo-1494822493217-c9840aba840c);background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1494822493217-c9840aba840c">Mountain</a>
+            </div>
+
+            <div class="box1  row2"
+                style="background-image: url(https://images.unsplash.com/photo-1750466594497-66529efb8a14);background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1750466594497-66529efb8a14">Sky</a>
+            </div>
+            <div class="box1"
+                style="background-image: url(https://images.unsplash.com/photo-1749581434794-d5de133303d9);background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1749581434794-d5de133303d9">Field</a>
+            </div>
+
+            <div class="box1"
+                style="background-image: url(https://images.unsplash.com/photo-1461723198950-3f65e13bb031);background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1461723198950-3f65e13bb031">Tree</a>
+            </div>
+
+            <div class="box1"
+                style="background-image: url(https://images.unsplash.com/photo-1482189349482-3defd547e0e9); background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1482189349482-3defd547e0e9">River</a>
+            </div>
+            <div class="box1  "
+                style="background-image: url(https://images.unsplash.com/photo-1602491453631-e2a5ad90a131);background-size: cover;">
+                <a href="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131">Tiger</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Follow and contact us on social media: </p>
+        <div class="icon" id="contact">
+            <a href="#"><i class='bx bxl-facebook' id="facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class='bx bxl-youtube' id="youtube"></i></a>
+            <a href="#"><i class='bx bxl-google' id="google"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

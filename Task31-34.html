@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-31-32-33-34 </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html {
+
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+/* header style */
+        header {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0 20px;
+        }
+
+        nav ul li {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        .bx {
+    font-size: 55px;
+    color: white;
+    display:none;
+}
+
+#check{
+    display: none;
+}
+@media (max-width: 768px) {
+    
+    .bx {
+        display: block;
+        margin-left: 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    #check:checked ~ nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 84px;
+        right: 0;
+        left: 0;
+        background-color: #333;
+        width: 100%;        
+    }
+}
+
+          /* end header style */
+
+          /* body style */
+        h2 {
+            text-align: center;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            flex-wrap: wrap
+        
+        }
+
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4 {
+            width: 250px;
+            height: 350px;
+            margin: 10px;
+            color: white;
+            font-size: 24px;
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 40%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        p {
+            padding-top: 25px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="bx bx-menu"></label>
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contect</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="box-1">
+            <h2>Horse</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1661886008804-9e5b219fc587?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9yc2VzJTIwcnVubmluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+
+        </div>
+
+        <div class="box-2">
+            <h2>Horse</h2>
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvcnNlcyUyMHJ1bm5pbmd8ZW58MHx8MHx8fDA%3D"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+
+        </div>
+
+        <div class="box-3">
+            <h2>Dog</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1667355164580-177ab44fe0f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+
+        </div>
+        <div class="box-4">
+            <h2>Mustang</h2>
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

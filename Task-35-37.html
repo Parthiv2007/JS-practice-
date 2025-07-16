@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-35-36-37</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f16060;
+            height: 100vh;
+        }
+
+        /* main {
+            border: 2px solid #ccc;
+            padding: 25px;
+            border-radius: 10px;
+            height: 50vh;
+        } */
+        form {
+            background-color: #f16060;
+            box-shadow: 14px 18px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            height: 50vh;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        input {
+            height: 20px;
+            width: 20vw;
+            margin-bottom: 20px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        button {
+            margin-left: 100px;
+            margin-top: 50px;
+            width: 10vw;
+            padding: 6px;
+            border-radius: 20px;
+            background-color: aquamarine;
+        }
+
+        button:hover {
+            background-color: #f0a3a3;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: #f44b4b;
+            color: rgb(0, 0, 0);
+
+        }
+
+
+        .radio {
+            width: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <h2>Task-35</h2>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+
+
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number"><br>
+
+
+
+            <label for="dob">Gender: </label>
+            <input class="radio" type="radio" id="Gender" name="gender" value="male"> Male
+            <input class="radio" type="radio" id="Gender" name="gender" value="female"> Female <br>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container,
+.pinholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 15px;
+    height: 25vh ;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.pinholder {
+    margin-bottom: 30px;
+}
+
+#pinInput {
+   margin-bottom: 20px;
+    width: 15vw;
+    height: 33px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.length {
+    width:15vw;
+}
+
+.genButton {
+    width: 150px;
+    height: 33px;
+}
+
+p {
+    font-size: 20px; 
+}
+
